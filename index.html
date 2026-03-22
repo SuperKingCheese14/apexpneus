@@ -44,6 +44,39 @@
         footer { background:#1a1a1a; color:white; text-align:center; padding:1.5rem; margin-top:2rem; font-size:0.9rem; }
         .highlight { color:#ffcc00; font-weight:bold; }
 
+        .language-switcher {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        z-index: 10;
+    }
+       .language-switcher a {
+       display: inline-block;
+    }
+        .language-switcher img {
+        width: 32px;          /* Perfect small size for a flag icon – try 28px or 36px if needed */
+        height: auto;         /* Keeps proportions */
+        max-width: 100%;      /* Prevents overflow on small screens */
+        border: 1px solid #ddd; /* Optional: subtle border for visibility */
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Optional: light shadow for pop */
+        transition: transform 0.2s;
+    }
+        .language-switcher img:hover {
+        transform: scale(1.1); /* Nice subtle zoom on hover */
+        opacity: 0.9;
+    }
+@media (max-width: 768px) {
+    .language-switcher {
+        position: static;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .language-switcher img {
+        width: 40px; /* Slightly larger on mobile for touch */
+    }
+}
+
         /* Mobile adjustment: center everything on small screens */
         @media (max-width: 768px) {
             header .header-container { 
