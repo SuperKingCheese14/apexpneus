@@ -8,21 +8,21 @@
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: Arial, sans-serif; line-height:1.6; color:#333; background:#f9f9f9; }
-        header { background:#1a1a1a; color:white; text-align:center; padding:2rem 1rem; }
-        header .header-container { 
-            display: flex; 
-            align-items: center; 
-            justify-content: flex-start; 
-            max-width: 1100px; 
-            margin: 0 auto; 
+        header { background:#1a1a1a; color:white; text-align:center; padding:2rem 1rem; position: relative; } /* Added relative for absolute positioning */
+        header .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        .logo { 
-            max-width: 180px; 
-            height: auto; 
-            margin-right: 2rem; 
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-right: 2rem;
         }
-        header .text-content { 
-            text-align: left; 
+        header .text-content {
+            text-align: left;
         }
         header h1 { font-size:2.5rem; margin-bottom:0.3rem; }
         header p { font-size:1.2rem; opacity:0.9; }
@@ -43,52 +43,49 @@
         button:hover { background:#e6b800; }
         footer { background:#1a1a1a; color:white; text-align:center; padding:1.5rem; margin-top:2rem; font-size:0.9rem; }
         .highlight { color:#ffcc00; font-weight:bold; }
-
+        
+        /* Language switcher styles */
         .language-switcher {
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        z-index: 10;
-    }
-       .language-switcher a {
-       display: inline-block;
-    }
+            position: absolute;
+            top: 1.5rem;
+            right: 1rem;
+            z-index: 10;
+        }
+        .language-switcher a {
+            display: inline-block;
+        }
         .language-switcher img {
-        width: 32px;          /* Perfect small size for a flag icon – try 28px or 36px if needed */
-        height: auto;         /* Keeps proportions */
-        max-width: 100%;      /* Prevents overflow on small screens */
-        border: 1px solid #ddd; /* Optional: subtle border for visibility */
-        border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Optional: light shadow for pop */
-        transition: transform 0.2s;
-    }
+            width: 32px;          /* Small and perfect size */
+            height: auto;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
         .language-switcher img:hover {
-        transform: scale(1.1); /* Nice subtle zoom on hover */
-        opacity: 0.9;
-    }
-@media (max-width: 768px) {
-    .language-switcher {
-        position: static;
-        text-align: center;
-        margin: 1rem 0;
-    }
-    .language-switcher img {
-        width: 40px; /* Slightly larger on mobile for touch */
-    }
-}
-
-        /* Mobile adjustment: center everything on small screens */
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
         @media (max-width: 768px) {
-            header .header-container { 
-                flex-direction: column; 
-                align-items: center; 
-                text-align: center; 
+            .language-switcher {
+                position: static;
+                text-align: center;
+                margin: 1rem 0;
             }
-            .logo { 
-                margin: 0 auto 1rem; 
+            .language-switcher img {
+                width: 40px; /* Slightly larger on mobile */
             }
-            header .text-content { 
-                text-align: center; 
+            header .header-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .logo {
+                margin: 0 auto 1rem;
+            }
+            header .text-content {
+                text-align: center;
             }
         }
     </style>
@@ -101,14 +98,23 @@
                 <h1>Apex Pneus</h1>
                 <p>Montage, équilibrage et vente de pneus – Service rapide et professionnel | Haute-Vienne</p>
             </div>
-</div>
+        </div>
+        
+        <!-- Language switcher with UK flag - links to english.html -->
+        <div class="language-switcher">
+            <a href="english.html" title="Switch to English version">
+                <img src="https://flagcdn.com/w32/gb.png" alt="UK flag - English version">
+            </a>
+        </div>
     </header>
+    
     <nav>
         <a href="#services">Services</a>
         <a href="#prices">Tarifs</a>
         <a href="#about">À propos</a>
         <a href="#contact">Contact</a>
     </nav>
+    
     <section id="services">
         <h2>Nos Services</h2>
         <ul style="list-style:none; max-width:700px; margin:0 auto; font-size:1.1rem;">
@@ -120,6 +126,7 @@
             <li>✔ Contrôle et gonflage</li>
         </ul>
     </section>
+    
     <section id="prices">
         <h2>Tarifs Indicatifs</h2>
         <table>
@@ -130,6 +137,7 @@
         </table>
         <p style="text-align:center; font-style:italic;">Prix TTC – sous réserve de confirmation selon véhicule et pneus. Devis gratuit sur place ou par téléphone.</p>
     </section>
+    
     <section id="about">
         <h2>À propos d'Apex Pneus</h2>
         <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.1rem;">
@@ -144,6 +152,7 @@
             SIRET : 52309867100036
         </p>
     </section>
+    
     <section id="contact">
         <h2>Contactez-nous</h2>
         <form action="https://formspree.io/f/mnjgljan" method="POST">
@@ -158,8 +167,9 @@
             <button type="submit">Envoyer le message</button>
         </form>
     </section>
+    
     <footer>
-        <p>&copy; 2026 Apex Pneus – Tous droits réservés</p>
+        <p>© 2026 Apex Pneus – Tous droits réservés</p>
     </footer>
 </body>
 </html>
