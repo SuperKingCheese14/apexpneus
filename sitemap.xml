@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://apexpneus.fr/</loc>
-    <lastmod>2026-03-18</lastmod>   <!-- change to today / last update date -->
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-03-22</lastmod>  <!-- Update to today's date or when you last modified the page -->
+    <changefreq>weekly</changefreq>  <!-- More frequent if you update often; monthly is also fine -->
     <priority>1.0</priority>
   </url>
-
-  <!-- Add more <url> blocks if you have other pages, e.g.: -->
-  <!--
   <url>
-    <loc>https://username.github.io/about.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://apexpneus.fr/english.html</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>  <!-- Slightly lower than homepage -->
   </url>
-  -->
-
 </urlset>
