@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://apexpneus.fr/</loc>
-    <lastmod>2026-03-22</lastmod>  <!-- Update to today's date or when you last modified the page -->
-    <changefreq>weekly</changefreq>  <!-- More frequent if you update often; monthly is also fine -->
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://apexpneus.fr/english.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>  <!-- Slightly lower than homepage -->
+    <priority>0.8</priority>
   </url>
 </urlset>
