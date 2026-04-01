@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex Tires - Fitting & Balancing of new tires | Haute-Vienne</title>
     <meta name="description" content="Apex Tires | Supply, fitting and balancing of new tires in Saint Auvent, Haute-Vienne, France.">
-
-    <!-- Self-referencing canonical for the English page -->
+    
+    <!-- Self-referencing canonical -->
     <link rel="canonical" href="https://apexpneus.fr/english.html" />
-
-    <!-- Hreflang tags - use full HTTPS URLs -->
+    
+    <!-- Hreflang tags -->
     <link rel="alternate" hreflang="fr" href="https://apexpneus.fr/" />
     <link rel="alternate" hreflang="en" href="https://apexpneus.fr/english.html" />
-
-    <!-- Favicon -->
+    
     <link rel="icon" href="logo.jpg" type="image/jpeg">
+
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: Arial, sans-serif; line-height:1.6; color:#333; background:#f9f9f9; }
-        header { background:#1a1a1a; color:white; text-align:center; padding:2rem 1rem; position: relative; } /* Added relative for flag positioning */
+        header { background:#1a1a1a; color:white; text-align:center; padding:2rem 1rem; position: relative; }
         header .header-container {
             display: flex;
             align-items: center;
@@ -34,7 +34,11 @@
         header .text-content {
             text-align: left;
         }
-        header h1 { font-size:2.5rem; margin-bottom:0.3rem; }
+        header h1 { 
+            font-size:2.3rem; 
+            margin-bottom:0.4rem; 
+            line-height: 1.1;
+        }
         header p { font-size:1.2rem; opacity:0.9; }
         nav { background:#333; padding:1rem; text-align:center; }
         nav a { color:white; margin:0 1.5rem; text-decoration:none; font-weight:bold; }
@@ -51,23 +55,20 @@
         input, textarea { width:100%; padding:0.8rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:4px; font-size:1rem; }
         button { background:#ffcc00; color:#1a1a1a; border:none; padding:1rem 2rem; font-size:1.1rem; font-weight:bold; cursor:pointer; border-radius:4px; display:block; margin:1rem auto 0; }
         button:hover { background:#e6b800; }
-        footer { background:#1a1a1a; color:white; text-align:center; padding:1.5rem; margin-top:2rem; font-size:0.9rem; }
+        footer { background:#1a1a1a; color:white; text-align:center; padding:2rem 1rem; margin-top:2rem; font-size:0.9rem; }
+
         .highlight { color:#ffcc00; font-weight:bold; }
-        
-        /* Language switcher styles (same as French page) */
+       
+        /* Language switcher */
         .language-switcher {
             position: absolute;
             top: 1.5rem;
             right: 1rem;
             z-index: 10;
         }
-        .language-switcher a {
-            display: inline-block;
-        }
         .language-switcher img {
             width: 60px;
             height: auto;
-            max-width: 100%;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -77,54 +78,77 @@
             transform: scale(1.1);
             opacity: 0.9;
         }
+
+        /* Brand logos in footer */
+        .brand-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 20px 0 15px 0;
+            flex-wrap: wrap;
+        }
+        .brand-logos img {
+            height: 48px;
+            width: auto;
+            transition: transform 0.2s;
+            opacity: 0.9;
+        }
+        .brand-logos img:hover {
+            transform: scale(1.08);
+            opacity: 1;
+        }
+
         @media (max-width: 768px) {
             .language-switcher {
                 position: static;
                 text-align: center;
                 margin: 1rem 0;
             }
-            .language-switcher img {
-                width: 40px;
-            }
+            .language-switcher img { width: 40px; }
             header .header-container {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
-            .logo {
-                margin: 0 auto 1rem;
-            }
-            header .text-content {
-                text-align: center;
-            }
+            .logo { margin: 0 auto 1rem; }
+            header .text-content { text-align: center; }
+            header h1 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
+    <!-- Facebook SDK (English version) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v25.0">
+    </script>
+
     <header>
         <div class="header-container">
             <img src="logo.jpg" alt="Apex Pneus Logo" class="logo">
             <div class="text-content">
-                <h1>Apex Tires</h1>
+                <!-- Updated H1 - Fixes the "too short" warning -->
+                <h1>Apex Tires - Fitting & Balancing of New Tires in Haute-Vienne</h1>
                 <p>Fitting, Balancing and Tire Sales – Fast and Professional | Saint-Auvent - Haute-Vienne</p>
             </div>
         </div>
-        
-        <!-- Language switcher with French flag - links back to French page -->
+       
+        <!-- Language switcher with French flag - links back to French homepage -->
         <div class="language-switcher">
             <a href="/" title="Switch to French version">
                 <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" alt="French flag - Version française">
             </a>
         </div>
     </header>
-    
+   
     <nav>
         <a href="#services">Services</a>
         <a href="#prices">Prices</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
     </nav>
-    
+   
     <section id="services">
         <h2>Our Services</h2>
         <ul style="list-style:none; max-width:700px; margin:0 auto; font-size:1.1rem;">
@@ -133,9 +157,10 @@
             <li>✔ Sales of New tires all brands</li>
             <li>✔ Puncture Repairs</li>
             <li>✔ Wheel Rotations</li>
+            <li>✔ Tire Pressure Check & Inflation</li>
         </ul>
     </section>
-    
+   
     <section id="prices">
         <h2>Prices</h2>
         <table>
@@ -146,32 +171,33 @@
         </table>
         <p style="text-align:center; font-style:italic;">Prices including tax – Free quote available by email or telephone.</p>
     </section>
-    
+   
     <section id="about">
         <h2>About Apex Pneus</h2>
-        <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.1rem;">
-            Apex Pneus is your trusted local tire specialist in Saint-Auvent 87310, Haute-Vienne, providing high-quality tire services to drivers across the region. We supply, fit, and balance new tires for cars, 4x4s, SUVs, and light utility vehicles from all leading brands.
-            <br><br>
-            Conveniently located at 1 Senas, Saint-Auvent 87310, we make tire changes easy and hassle-free with expert mounting and balancing services using professional equipment. Whether you need summer tires, winter tires, all-season options, or performance upgrades, our team delivers fast, reliable work to get you back on the road safely.
-            <br><br>
-            What sets Apex Pneus apart? We're proudly open on Sundays for your convenience—perfect for weekend warriors, busy professionals, or last-minute needs when other garages are closed. No more waiting until Monday!
-            <br><br>
-            - Wide selection of premium new tires at competitive prices<br>
-            - Professional fitting and wheel balancing included<br>
-            - Expert advice tailored to your vehicle<br>
-            - Friendly, local service in Saint-Auvent and surrounding Haute-Vienne areas
-            <br><br>
-            Visit Apex Pneus today for top-quality tires, expert installation, and Sunday openings that put you first. Your safety and satisfaction drive us—contact us or stop by at 1 Senas, 87310 Saint-Auvent!
-            <br><br>
-            Hours: Monday to Sunday 8h–18h<br>
-            Emergencies: 24/24<br>
-            Address: Apex Pneus, 1 Senas, Saint-Auvent 87310<br>
-            Email: lecservices@gmail.com<br>
-            Phone: 06 75 26 05 49<br>
-            SIRET: 52309867100036
-        </p>
+        <div style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 1.1rem; line-height: 1.7;">
+            <p><strong>Apex Pneus</strong> is your trusted local tire specialist in <strong>Saint-Auvent 87310, Haute-Vienne</strong>, serving drivers across the region.</p>
+           
+            <p>We supply, fit and balance <strong>new tires</strong> from all major brands for cars, 4×4s, SUVs and light utility vehicles.</p>
+           
+            <p>Located at <strong>1 Senas, Saint-Auvent 87310</strong>, we make tire changes easy and hassle-free with professional mounting and balancing using high-quality equipment.</p>
+           
+            <p>Need summer tires, winter tires, all-season tires or performance upgrades? Our team guarantees fast, reliable and safe work so you can get back on the road with confidence.</p>
+           
+            <p>What makes Apex Pneus different? We are <strong>proudly open on Sundays</strong> for your convenience — perfect for weekend drivers, busy professionals or last-minute needs when other garages are closed.</p>
+           
+            <ul style="list-style-type: disc; padding-left: 1.8rem; margin: 1.5rem 0; line-height: 1.8;">
+                <li>Wide selection of premium new tires at competitive prices</li>
+                <li>Professional fitting and wheel balancing included</li>
+                <li>Personalised advice tailored to your vehicle</li>
+                <li>Friendly local service in Saint-Auvent and the whole Haute-Vienne area</li>
+            </ul>
+           
+            <p>Come to Apex Pneus today for quality tires, expert fitting and Sunday openings that make your life easier.</p>
+           
+            <p>Your safety and satisfaction are our priority — contact us or visit us directly at <strong>1 Senas, 87310 Saint-Auvent</strong>!</p>
+        </div>
     </section>
-    
+   
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="https://formspree.io/f/mnjgljan" method="POST">
@@ -186,9 +212,37 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
-    
+   
     <footer>
-        <p>&copy; 2026 Apex Pneus – All Rights Reserved</p>
+        <!-- Tire Brands Section -->
+        <div class="brand-logos">
+            <a href="https://www.pirelli.com" target="_blank" rel="noopener noreferrer">
+                <img src="pirreli.png" alt="Pirelli Tires" title="Pirelli">
+            </a>
+            <a href="https://www.michelin.com" target="_blank" rel="noopener noreferrer">
+                <img src="michelin.png" alt="Michelin Tires" title="Michelin">
+            </a>
+            <a href="https://www.continental-tires.com" target="_blank" rel="noopener noreferrer">
+                <img src="continental.png" alt="Continental Tires" title="Continental">
+            </a>
+        </div>
+
+        <!-- Facebook Plugin -->
+        <div class="fb-page"
+             data-href="https://www.facebook.com/profile.php?id=61577462122765"
+             data-tabs="timeline"
+             data-width="300"
+             data-height="70"
+             data-small-header="true"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/profile.php?id=61577462122765" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/profile.php?id=61577462122765">Apex Pneus</a>
+            </blockquote>
+        </div>
+
+        <p>© 2026 Apex Pneus – All Rights Reserved</p>
     </footer>
 </body>
 </html>
